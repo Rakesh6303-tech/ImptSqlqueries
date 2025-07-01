@@ -3,19 +3,12 @@
    SELECT e.Emp_Name, d.Dept_Name
 FROM employees e
 LEFT JOIN departments d ON e.Dept_id = d.Dept_id;
-
 --Inner JOIN
 -- List all employees and their department names (only if they belong to a department).
    -- Inner Join (Returns matching rows from both tables.)
 SELECT e.Emp_Name, d.Dept_Name
 FROM employees e
 INNER JOIN departments d ON e.Dept_id = d.Dept_id;
-
-
-
-
-
-
 -- LEFT JOIN (LEFT OUTER JOIN)
 -- Returns all rows from the left table, plus matched rows from the right table. Unmatched rows get NULL.
 --  Use case: Show all employees, even those not assigned to a department.
