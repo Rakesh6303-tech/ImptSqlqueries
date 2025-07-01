@@ -43,3 +43,34 @@ UNION
 SELECT e.Emp_Name, d.Dept_Name
 FROM employees e
 RIGHT JOIN departments d ON e.Dept_id = d.Dept_id;
+
+--SELF JOIN
+--A table joined with itself.
+--Use case: Show employees and their managers using a Manager_id foreign key.
+SELECT e1.Emp_Name AS Employee, e2.Emp_Name AS Manager
+FROM employees e1
+JOIN employees e2 ON e1.Manager_id = e2.Emp_id;
+
+
+--CROSS JOIN
+--Returns Cartesian product (every row in A joins with every row in B).
+-- Use case: Generate all possible employee-department pairings (e.g., for simulation/testing).
+SELECT e.Emp_Name, d.Dept_Name
+FROM employees e
+CROSS JOIN departments d;
+
+
+-- JOINS QUERIES FROM HACKER RANK
+--Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+--Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+select sum(CITY.POPULATION)
+from CITY INNER JOIN COUNTRY
+on CITY.COUNTRYCODE=COUNTRY.CODE where CONTINENT='Asia';
+--Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
+--Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+select CITY.NAME
+from CITY inner join country
+on CITY.CountryCode=COUNTRY.Code
+where CONTINENT='Africa';
+
+
