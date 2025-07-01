@@ -13,5 +13,6 @@
   select max(population)-min(population) from CITY;
 --Query the sum of Northern Latitudes (LAT_N) from STATION having values greater than 38.7880 and less than 137.2345. Truncate your answer to  decimal places.
   select TRUNCATE(sum(LAT_N),4) from STATION where LAT_N>38.7880 AND LAT_N<137.2345;
-
+--Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is less than 137.2345. Truncate your answer to  decimal places.
+  select TRUNCATE(MAX(LAT_N),4) from STATION where LAT_N<137.2345;
 
