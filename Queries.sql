@@ -32,24 +32,6 @@
 );
 
 
-
-
-
-    --Aggregation Functions Hacker Rank
---Query the total population of all cities in CITY where District is California.
-  select sum(population) from CITY where DISTRICT='California';
---Query a count of the number of cities in CITY having a Population larger than .
-  select count(NAME) from CITY where Population>100000;
---Query the average population of all cities in CITY where District is California.
-  select avg(population) from CITY where DISTRICT='California';
---Query the average population for all cities in CITY, rounded down to the nearest integer.
-  select ROUND(AVG(population)) from city;
---Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
-  select sum(population) from city where countrycode='JPN';
---Query the difference between the maximum and minimum populations in CITY.
-  select max(population)-min(population) from CITY;
-
-
 -- Traingles
 --Write a query identifying the type of each record in the TRIANGLES table using its three side lengths. 
 --Output one of the following statements for each record in the table:
