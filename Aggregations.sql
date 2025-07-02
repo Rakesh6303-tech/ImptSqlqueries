@@ -1,3 +1,7 @@
+-- Multi Row Functions 
+   --Defination : returns the single result of combining all input records 
+ -- Types : Sum(), Max() , Min() , Avg() , Count() , 
+
     --Aggregation Functions Hacker Rank
 --Query the total population of all cities in CITY where District is California.
   select sum(population) from CITY where DISTRICT='California';
