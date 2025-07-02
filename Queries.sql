@@ -19,6 +19,13 @@
     WHERE Dept_id = e.Dept_id
 );
 
+-- To find employees who joined in the last month from the current date, 
+     --you can use the JOIN_DATE column and filter with MySQL's date functions.
+   SELECT Name, JoinDate
+   FROM Employees
+   WHERE JoinDate >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);
+
+
 
 -- Traingles
 --Write a query identifying the type of each record in the TRIANGLES table using its three side lengths. 
