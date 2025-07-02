@@ -1,2 +1,3 @@
 # ImptSqlqueries
-Some Important SQL Queries
+Sql Topics And Queries
+ Important SQL Queries
