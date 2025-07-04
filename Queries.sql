@@ -19,6 +19,13 @@
     WHERE Dept_id = e.Dept_id
 );
 
+-- Find all duplicate email addresses in the employee table and show how many times each one appears
+      select Email, count(Email) AS appears
+       from Employee
+       GROUP BY Email
+      Having COUNT(Email)>1;
+   
+
 -- To find employees who joined in the last month from the current date, 
      --you can use the JOIN_DATE column and filter with MySQL's date functions.
    SELECT Name, JoinDate
