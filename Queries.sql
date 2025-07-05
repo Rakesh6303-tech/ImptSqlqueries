@@ -27,6 +27,11 @@
        from Employee
        GROUP BY Email
       Having COUNT(Email)>1;
+
+-- Find Average Salary From Each Deptartment
+    select e_dept, avg(salary) from Employees Group by e_dept;
+-- Find Sum of salary From Each Department
+    select e_dept sum(salary) from Employees Group by e_dept;
    
 
 -- To find employees who joined in the last month from the current date, 
