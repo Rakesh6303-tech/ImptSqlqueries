@@ -17,7 +17,10 @@
     SELECT AVG(salary)
     FROM employees
     WHERE Dept_id = e.Dept_id
-);
+    );
+
+-- To Get the Top 2 Lowest Salaries:
+    select salary from Employees order by salary asc limit 2;
 
 -- Find all duplicate email addresses in the employee table and show how many times each one appears
       select Email, count(Email) AS appears
