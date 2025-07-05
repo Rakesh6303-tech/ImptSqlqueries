@@ -6,11 +6,14 @@
   select name from Employee where salary>2000 and months<10 order by employee_id asc;
 
 -- Most Important Queries
+-- Limit : limit the number of records from the final table. It will start with 1.
+-- Offset : select specific values from the column and it will be starting from with 0.
+
 --To find the 2nd highest salary from an employees
      -- This skips the highest salary (OFFSET 1) and returns the next one.
    SELECT DISTINCT salary FROM employees ORDER BY salary DESC LIMIT 1 OFFSET 1;
 --Find duplicate records in a table.
-   SELECT Emp_Name, COUNT(*) FROM employees GROUP BY Emp_NameHAVING COUNT(*) > 1;
+   SELECT Emp_Name, COUNT(*) FROM employees GROUP BY Emp_Name HAVING COUNT(*) > 1;
 --Find employees who earn more than the average salary in their department.
   SELECT * FROM employees e 
   WHERE salary > (
@@ -18,21 +21,22 @@
     FROM employees
     WHERE Dept_id = e.Dept_id
     );
-
 -- To Get the Top 2 Lowest Salaries:
     select salary from Employees order by salary asc limit 2;
+-- To Get Top 2 salary without any conditon
+    select salary from Employees limit 2;
+-- To Get Top 2 Highest Salary in the table
+    select salary from Employees order by salary desc limit 2;
+-- Find Average Salary From Each Deptartment
+    select e_dept, avg(salary) from Employees Group by e_dept;
+-- Find Sum of salary From Each Department
+    select e_dept sum(salary) from Employees Group by e_dept;
 
 -- Find all duplicate email addresses in the employee table and show how many times each one appears
       select Email, count(Email) AS appears
        from Employee
        GROUP BY Email
       Having COUNT(Email)>1;
-
--- Find Average Salary From Each Deptartment
-    select e_dept, avg(salary) from Employees Group by e_dept;
--- Find Sum of salary From Each Department
-    select e_dept sum(salary) from Employees Group by e_dept;
-   
 
 -- To find employees who joined in the last month from the current date, 
      --you can use the JOIN_DATE column and filter with MySQL's date functions.
