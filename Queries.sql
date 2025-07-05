@@ -7,7 +7,7 @@
 
 -- Most Important Queries
 -- Limit : limit the number of records from the final table. It will start with 1.
--- Offset : select specific values from the column and it will be starting from with 0.
+-- Offset : select specific values from the column and it will be starting from with 0. And it will skip the first record
 
 --To find the 2nd highest salary from an employees
      -- This skips the highest salary (OFFSET 1) and returns the next one.
