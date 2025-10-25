@@ -15,8 +15,10 @@ It was introduced by **E.F. Codd**.
 
 Normalization is done in **stages called normal forms**. Each normal form has rules.
 
----
-
+---------------------------------------------------------------------
+// Note :➡️ ProductName depends only on ProductID (not on OrderID),
+then that is a Partial Dependency.
+---------------------------------------------------------------------
 ### **1. First Normal Form (1NF)**
 
 * Each column must contain **atomic values** (no multiple values in one column).
