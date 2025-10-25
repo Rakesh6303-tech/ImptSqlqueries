@@ -22,7 +22,11 @@ This takes more time.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **If you create an index on the Phone column:
 CREATE INDEX idx_phone ON Customers(Phone);
-Now, when you search by phone number, SQL uses the index to instantly find that record — like looking up a page number in a book index.
+
+**Run the Same Query Again
+SELECT * FROM Customers WHERE Phone = '9876501234';
+👉 Now SQL uses the index —
+It directly goes to the record where that phone number exists.
 ✅ Result: Query runs much faster.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🧠 Simple Analogy
