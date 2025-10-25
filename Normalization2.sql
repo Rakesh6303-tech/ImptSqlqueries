@@ -131,9 +131,3 @@ Normalization is done in **stages called normal forms**. Each normal form has ru
 * **1NF → remove repeating groups**
 * **2NF → remove partial dependency**
 * **3NF → remove transitive dependency**
-
----
-
-If you want, I can also make a **simple diagram showing 1NF → 2NF → 3NF with an example table**. It’s super easy to remember for interviews.
-
-Do you want me to make that diagram?
