@@ -1,7 +1,7 @@
 -- JOINS
      -- Defination: Joins in Sql used to Comnine Two or More Tables Based on releated Column Them.
 -- Types Of Joins
-  -- Inner Join : is used to combine rows from two or more tables based on matching condition between them.It return Both Records where Specific Conditon is True.
+  -- Inner Join : is used to combine rows from two or more tables based on {MCBT} matching condition between them.It return Both Records where Specific Conditon is True.
   -- Right Join : is Used to return all Records from right table as well as matching records from the left table. If no matching records will be found in left table , return null values.
   -- Left Join : is used to return all Records from left table as well as matching records from the right table. If no matching records will be found in right table, return null values.
   -- Full Join : Combines the results of both Left Join and Right Join. it return all records both tables. 
