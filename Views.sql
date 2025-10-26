@@ -32,6 +32,18 @@ SELECT * FROM view_name;
 
 ## 🧠 **Simple Example**
 
+## 🔹 **Real-Time Example**
+
+* In a **school management system**, the teacher wants a **list of students in Class 10**.
+* Instead of writing a query every time, you create a view `Class10Students`.
+* Now the teacher can just do:
+
+```sql
+SELECT * FROM Class10Students;
+```
+
+* This is easy, fast, and safe.
+-------------------------------------------------
 ### Table: Students
 
 | StudentID | Name   | Class | Marks |
@@ -75,20 +87,6 @@ SELECT * FROM Class10Students;
 
 ---
 
-## 🔹 **Real-Time Example**
 
-* In a **school management system**, the teacher wants a **list of students in Class 10**.
-* Instead of writing a query every time, you create a view `Class10Students`.
-* Now the teacher can just do:
 
-```sql
-SELECT * FROM Class10Students;
-```
 
-* This is easy, fast, and safe.
-
----
-
-If you want, I can also explain **types of views in SQL** like **Simple, Complex, Updatable** with **easy examples**, so it’s complete for learning and interviews.
-
-Do you want me to do that?
