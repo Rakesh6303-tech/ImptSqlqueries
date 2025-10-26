@@ -1,13 +1,7 @@
-Sure! Let’s go over **SQL Views** in a simple, clear way so you can easily understand and remember them.
-
----
-
 ## 💡 **What is a View?**
 
 * A **View** is a **virtual table** in SQL.
 * It **does not store data physically**, but **displays data from one or more tables**.
-* You can think of it as a **saved query** — you can query a view like a table.
-
 ---
 
 ## 🧩 **Key Points**
