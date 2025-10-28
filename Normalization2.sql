@@ -96,7 +96,7 @@ then that is a Partial Dependency.
 | 1         | Alice       | CS       | John     |
 | 2         | Bob         | IT       | Mike     |
 
-* `DeptHead` depends on `DeptName`, not `StudentID`.
+* `DeptHead` depends on `DeptName`, not `StudentID`. so we have to do seperate in tables
 
 **Convert to 3NF (Split tables):**
 
