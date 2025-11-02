@@ -146,8 +146,3 @@ CROSS JOIN Orders;
 * **FULL OUTER JOIN:** everything + matches
 * **CROSS JOIN:** all possible pairs
 
----
-
-If you want, I can also make a **small diagram with arrows** showing LEFT, RIGHT, INNER, FULL joins visually—it makes it super easy to remember for interviews.
-
-Do you want me to make that diagram?
